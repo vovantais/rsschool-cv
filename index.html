@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>rsschool-cv-html</title>
+	<link rel="stylesheet" href='css/style.css'>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main>
+			<div class="container">
+				<section class='cv'>
+					<div class="cv__body">
+						<div class="cv__image">
+							<figure class="image__JOBS">
+								<img src="img/8QfulsANZKA.jpg" alt="JOBS">
+							</figure>
+						</div>
+						<div class="cv__item">
+							<ol class="cv__list">
+								<li>Gedeiko,Vladimir</li>
+								<li>My contact info:</li>
+								<ul>
+									<li>number telephone:+375297818282;</li>
+									<li><a href='https://vk.com/vladimir_hiadzeika'>VK</a></li>
+								</ul>
+								<li>
+									<span>I like to learn new things, I like to develop. I study at IT Step courses. Sociable,
+										sociable, proactive. I love
+										self-development, books, learning foreign languages, sports, active lifestyle.</span>
+								</li>
+								<li>
+									<span>I have studied and worked with:</span>
+									<ul>
+										<li>HTML5</li>
+										<li>CSS3</li>
+										<li>Sass</li>
+										<li>JavaScript</li>
+										<li>jQuery</li>
+										<li>React.js</li>
+										<li>Redax</li>
+										<li>Node.js</li>
+										<li>Express.js</li>
+										<li>BEM</li>
+										<li>Шаблонизатор Pug</li>
+										<li>Bootstrap</li>
+										<li>Gulp</li>
+										<li>Git</li>
+										<li>Avocode</li>
+										<li>Adobe Photoshop</li>
+									</ul>
+								</li>
+								<li>
+									<code>
+										<p> <strong>Example code:</strong> </p>
+										authRoute.route("/login")<br> 
+										.post(async (req, res) => {<br>
+										const { Name, pwdHash } = req.body;<br>
+										const user = await Users.findOne({ Name });<br>
+										if (!user) {<br>
+										res.status(404).json("This user wasn`t found!");<br>
+										}<br>
+										const passwordResult = await bcrypt.compareSync(req.body.Password, user.pwdHash);<br>
+										if (!passwordResult) {<br>
+										res.status(401).json("This password is not correct!");<br>
+										}<br>
+										await jwt.verify(user.Token, SECRET_WORD, (err, decoded) => {<br>
+										if (err) {<br>
+										jwt.sign({<br>
+										userName: Name,<br>
+										}, SECRET_WORD,<br>
+										{<br>
+										expiresIn: '7d',<br>
+										}<br>
+										)<br>
+										res.status(200).json({ Token: user.Token, message: 'You login Successfully!' });<br>
+										} else {<br>
+										res.status(200).json({ Token: user.Token, message: 'You login Successfully!' });<br>
+										}<br>
+										})<br>
+										});<br>
+										export const AuthFetch = (authPayload) => (dispatch) => {<br>
+										dispatch({<br>
+										type: AUTH_LOGIN_FETCH,<br>
+										});<br>
+										axios.post(`${API_URI}/login`, { ...authPayload })<br>
+										.then(res => dispatch(AuthSuccess(res.data)))<br>
+										.catch(err => dispatch(AuthFailure(err.data)))<br>
+										};<br>
+										export const AuthSuccess = (payload) => ({<br>
+										type: AUTH_LOGIN_SUCCESS,<br>
+										payload,<br>
+										});<br>
+										export const AuthFailure = (payload) => ({<br>
+										type: AUTH_LOGIN_FAILURE,<br>
+										payload,<br>
+										});<br>
+									</code>
+								</li>
+								<li>
+									<span>I study at IT Step courses. I have experience with React.js,Redax, Node.js.I did
+										various tasks on page layout. Also I
+										used Mongo.db databases for small applications on react. I continue to study new
+										technologies now I am getting
+										acquainted with PHP and databases MySql and Laravel.</span>
+									<ul>
+										<li><a href="https://github.com/vovantais">Github</a></li>
+									</ul>
+								</li>
+								<li>
+									<span>
+										I studied at the INSTITUTION OF EDUCATION "GRODNENSKY STATE ELECTRICAL COLLEGE NAMED AFTER
+										IVAN SCHASTNY" at the
+										Technical Faculty by specialties, Electrician, Car mechanic.
+									</span>
+									<span>Now I am studying at BIP - Institute of Law, Grodno. Specializing in
+										jurisprudence</span>
+								</li>
+								<li>
+									<span>
+										I have been studying spoken English courses since 2018 and have experience of
+										communicating with native speakers from
+										America and England.
+									</span>
+									<span>Yes-grodno, Spoken English.</span>
+								</li>
+							</ol>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+	</div>
+</body>
+
+</html>
