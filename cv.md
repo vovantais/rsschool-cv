@@ -41,7 +41,7 @@ I have studied and worked with:
                userName: Name,
             }, SECRET_WORD,
                {
-                  expiresIn: '7d'
+                  expiresIn: '7d',
                } 
             )
             res.status(200).json({ Token: user.Token, message: 'You login Successfully!' });
@@ -53,10 +53,9 @@ I have studied and worked with:
 	
  ```
 6. I study at IT Step courses. I have experience with React.js,Redax, Node.js.I did various tasks on page layout. Also I used Mongo.db databases for small applications on react. I continue to study new technologies now I am getting acquainted with PHP and  databases MySql and Laravel. 
-- Github(https://github.com/vovantais).
-7. I studied at the INSTITUTION OF EDUCATION "GRODNENSKY STATE ELECTRICAL COLLEGE NAMED AFTER IVAN SCHASTNY"
-At the Technical Faculty by specialties, Electrician, Car mechanic
-Now I am studying at BIP - Institute of Law, Grodno
+- Github https://github.com/vovantais .
+7. I studied at the INSTITUTION OF EDUCATION "GRODNENSKY STATE ELECTRICAL COLLEGE NAMED AFTER IVAN SCHASTNY" at the Technical Faculty by specialties, Electrician, Car mechanic.
+Now I am studying at BIP - Institute of Law, Grodno.
 Specializing in jurisprudence
 8. I have been studying spoken English courses since 2018 and have experience of communicating with native speakers from America and England
 Yes-grodno, Spoken English.
