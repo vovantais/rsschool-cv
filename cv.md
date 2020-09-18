@@ -50,7 +50,22 @@ I have studied and worked with:
          }
       })
    });
-	
+	export const AuthFetch = (authPayload) => (dispatch) => {
+	   dispatch({
+	      type: AUTH_LOGIN_FETCH,
+		});
+	   axios.post(`${API_URI}/login`, { ...authPayload })
+	      .then(res => dispatch(AuthSuccess(res.data)))
+	      .catch(err => dispatch(AuthFailure(err.data)))
+		};
+		export const AuthSuccess = (payload) => ({
+	   type: AUTH_LOGIN_SUCCESS,
+	   payload,
+		});
+		export const AuthFailure = (payload) => ({
+	   type: AUTH_LOGIN_FAILURE,
+	   payload,
+		});	
  ```
 6. I study at IT Step courses. I have experience with React.js,Redax, Node.js.I did various tasks on page layout. Also I used Mongo.db databases for small applications on react. I continue to study new technologies now I am getting acquainted with PHP and  databases MySql and Laravel. 
 - Github https://github.com/vovantais .
